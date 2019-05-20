@@ -102,3 +102,23 @@ Global object is not needed to load it explecitly.
 Non-global modules needs require to load. 
 ```
 
+## Chapter 4 Restful API
+
+### 1. Definition:
+
+A RESTFul API is an application program interface (API) that uses HTTP requests to GET, PUT, POST and DELETE data. 
+
+<strong>A mapping between HTTP routes and CRUD</strong>
+
+### 2. Examples
+
+| Name    | Path           | HTTP Verb | Purpose                                          |
+| ------- | -------------- | --------- | ------------------------------------------------ |
+| Index   | /dogs          | GET       | List all dogs                                    |
+| New     | /dogs/new      | GET       | Show new dog form                                |
+| Create  | /dogs          | POST      | Create a new dog, then redirect somewhere        |
+| Show    | /dogs/:id      | GET       | Show info about the specific dog                 |
+| Edit    | /dogs/:id/edit | GET       | show edit form for one dog                       |
+| Update  | /dogs/:id      | PUT       | Update a particular dog, then redirect somewhere |
+| Destroy | /dogs/:id      | DELETE    | DELETE a particular dog, then redirect somewhere |
+
